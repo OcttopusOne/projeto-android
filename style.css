@@ -1,0 +1,222 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family= Raleway & display = swap');
+@import url('https://fonts.googleapis.com/css2?family= Cinzel:wght@600 & display = swap');
+@font-face {
+    font-family: "idroid";
+    src: url(idroid.otf) format('opentype') ;
+    font-weight: normal;
+}
+
+:root {
+    --fonte-padrao: verdana, geneva, tahoma, sans-serif;
+    --fonte-destaque: 'Raleway', sans-serif;
+    --fonte-android: 'idroid', cursive;
+    --fonte--subtitulo: 'Cinzel', serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a.externo::after {
+    content: ' \1F517';
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: #D9CBBF;
+}
+
+header {
+    background-image: linear-gradient(#F2F2F2, #BFA995, #8C6A56);
+    color: #F2F2F2;
+    padding-top: 40px;
+}
+
+header h1 {
+    color: #F2F2F2;
+    font-family: var(--fonte-android);
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 8px -8px 12px rgba(0, 0, 0, 0.521);
+}
+
+header p {
+    color: #F2F2F2;
+    font-family: var(--fonte--subtitulo);
+    text-align: center;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav {
+    background-color: #8C6A56;
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #F2F2F2;
+    padding: 10px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+#menu-h {
+    background-color: #8C6A56;
+}
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0px;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #F2F2F2;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 0.8s;
+}
+
+#menu-h ul li a:hover {
+    background-color: #402e24;
+}
+
+main {
+    background-color: #F2F2F2;
+    padding: 20px;
+    border: 20px;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0px 0px 10px #402e24;
+    margin-bottom: 50px;
+
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+}
+main section {
+    background-color: #F2F2F2;
+    color: #402E24;
+    text-align: justify;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, #8C6A56, #BFA995);
+    text-align: center;
+}
+
+main p {
+    text-align: justify;
+    font-family: var(--fonte-destaque);
+    margin: 15px 0px;
+    text-indent: 20px;
+    line-height: 1.5em;
+}
+
+main strong {
+    color: #402E24;
+    font-weight: bold;
+    background-color: #D9CBBF;
+    padding: 1px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #402E24;
+    color: #F2F2F2;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+main a:hover{
+    text-decoration: underline;
+
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+@media (max-width: 728px) {
+
+div .evolucao {
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+}
+
+div .evolucao > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+}
+
+aside {
+    background-color: #BFA995;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #402E24;
+}
+
+aside h3 {
+    background-color: #402E24;
+    color: #F2F2F2;
+    font-size: var(--fonte--subtitulo);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+aside section {
+    background-color: #BFA995;
+}
+
+aside section ul {
+    list-style-type: '\2611  ';
+    list-style-position: inside;
+    columns: 2;
+}
+
+section h3 {
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    margin: 10px -10px -10px -10px;
+    text-align: justify;
+    font-size: var(--fonte--subtitulo);
+}
+
+
+footer {
+    background-color: #8C6A56;
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    color: #F2F2F2;
+    padding: 5px;
+
+}
